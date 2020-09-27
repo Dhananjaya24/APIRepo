@@ -1,0 +1,414 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-27T18:38:51.391Z",
+        "line": 4,
+        "name": "Application homepage should open",
+        "description": "",
+        "id": "application-login;application-homepage-should-open",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on login page",
+            "match": {
+              "location": "StepDefination.UserLogin.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logins into application with \"dhanu\" and \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dhanu\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.UserLogin.user_logins_into_application_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User logged in homepage should display",
+            "match": {
+              "location": "StepDefination.UserLogin.user_logged_in_homepage_should_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "logged in user name display \"True\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"True\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefination.UserLogin.logged_in_user_name_display(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-27T18:38:53.428Z",
+        "line": 11,
+        "name": "Application homepage should open",
+        "description": "",
+        "id": "application-login;application-homepage-should-open",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on login page",
+            "match": {
+              "location": "StepDefination.UserLogin.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user logins into application with \"jay\" and \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jay\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefination.UserLogin.user_logins_into_application_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User logged in homepage should display",
+            "match": {
+              "location": "StepDefination.UserLogin.user_logged_in_homepage_should_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "logged in user name display \"False\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"False\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefination.UserLogin.logged_in_user_name_display(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Application login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-27T18:38:53.444Z",
+        "line": 12,
+        "name": "Verify if place is being added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-being-added-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22858000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place payload \"HouseNameCC\" \"Telugu\" \"Sweet Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HouseNameCC\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Telugu\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Sweet Home\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefination.AddPlace.add_place_payload(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11520000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefination.AddPlace.user_calls_with_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Then API call should give reponse status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.AddPlace.then_api_call_should_give_reponse_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6724000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefination.AddPlace.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefination.AddPlace.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2350000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify created place_id maps to \"HouseNameCC\" using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HouseNameCC\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 52
+                }
+              ],
+              "location": "StepDefination.AddPlace.verify_created_place_id_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-27T18:39:36.995Z",
+        "line": 16,
+        "name": "Verify Delete place funcationality",
+        "description": "",
+        "id": "validating-place-api;verify-delete-place-funcationality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Delete place payload",
+            "match": {
+              "location": "StepDefination.AddPlace.delete_place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1941000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user calls \"DeletePlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefination.AddPlace.user_calls_with_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Then API call should give reponse status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.AddPlace.then_api_call_should_give_reponse_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefination.AddPlace.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place API",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/PlaceValidations.feature",
+    "tags": []
+  }
+]
