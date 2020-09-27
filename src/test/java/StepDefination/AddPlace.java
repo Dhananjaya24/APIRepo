@@ -80,7 +80,7 @@ public class AddPlace extends Utils {
 	@Then("Then API call should give reponse status code {int}")
 	public void then_api_call_should_give_reponse_status_code(Integer int1) {
 		
-		System.out.println("Status code check:"+resp.getStatusCode());		
+		System.out.println("Status code check point:"+resp.getStatusCode());		
 		assertEquals(resp.getStatusCode(),200);
 	}
 	@Then("{string} in response body is {string}")
